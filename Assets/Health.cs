@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Health : MonoBehaviour {
 
-	public int currentHealth;
-	public int maxHealth;
+	public float currentHealth;
+	public float maxHealth;
 }

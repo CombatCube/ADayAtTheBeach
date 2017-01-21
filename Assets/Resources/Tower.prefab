@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114573923792806708}
   - component: {fileID: 114851055300745836}
   - component: {fileID: 114532710777448658}
+  - component: {fileID: 114435033651169934}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -43,6 +44,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114435033651169934
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493879823507462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281819e7e920eca4b8c3bd37cfc49040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPerFrame: 0.3
+  health: {fileID: 114532710777448658}
 --- !u!114 &114532710777448658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,8 +68,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b8929ddee382744fb3b0a085984d358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 320
-  maxHealth: 1000
+  currentHealth: 30
+  maxHealth: 100
 --- !u!114 &114573923792806708
 MonoBehaviour:
   m_ObjectHideFlags: 1
