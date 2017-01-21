@@ -2,18 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TowerScript : MonoBehaviour {
-
-	public int CurrentHealth; 
-	public int MaxHealth;
-	public GameObject tower;
+public class TextUpdate : MonoBehaviour {
+	public int Day = 1;
 	// Use this for initialization
 	void Start () {
 		
 	}
+
 	
 	// Update is called once per frame
 	void Update () {
-		
 	}
 }
