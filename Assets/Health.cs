@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Health : MonoBehaviour {
 
-	public int currentHealth;
-	public int maxHealth;
+	public float currentHealth;
+	public float maxHealth;
+
+	void Update() {
+		if (currentHealth <= 0) {
+			Destroy (gameObject);
+		}
+	}
 }
