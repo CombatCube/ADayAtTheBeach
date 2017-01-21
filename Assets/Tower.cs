@@ -25,7 +25,6 @@ public class Tower : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//TODO remove this once debugging is done
-
 		Sprite towerSprite = Resources.Load<Sprite> (TOWER_SPRITES[(int)towerType]);
 		GetComponent<SpriteRenderer> ().sprite = towerSprite;
 	}
