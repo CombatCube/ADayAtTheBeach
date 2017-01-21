@@ -10,7 +10,9 @@ public class TowerClick : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Start () {
-		c1.a = c1.a - 0.25f;
+		c1.b = c1.b - 0.1f;
+		c1.g = c1.g - 0.1f;
+		c1.r = c1.r - 0.1f;
 		
 	}
 	
