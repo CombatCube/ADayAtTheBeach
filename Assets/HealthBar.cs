@@ -73,6 +73,10 @@ public class HealthBar : MonoBehaviour {
 		updateHealth ();
 	}
 
+	void OnDestroy() {
+		// delete every single health bar canvas
+	}
+
 	private void buildUIObject(ref GameObject gameObject, Canvas canvas){
 		gameObject = new GameObject();
 		gameObject.transform.SetParent(canvas.transform);
