@@ -7,6 +7,16 @@ public class MouseRead : MonoBehaviour {
 	public GameObject cratePink;
 	public GameObject sandToMake;
 	// Use this for initialization
+	public GameObject sandObject;
+	public GameObject towerObject;
+
+	public void setSandMode() {
+		sandToMake = sandObject;
+	}
+
+	public void setTowerMode() {
+		sandToMake = towerObject;
+	}
 	void Start () {
 		
 	}
@@ -18,7 +28,7 @@ public class MouseRead : MonoBehaviour {
 			var touchPos = Input.GetTouch (0).position;
 			var movePos = Camera.main.ScreenToWorldPoint (touchPos);
 			var newSand = Instantiate (sandToMake);
-			movePos.z = 0;
+			movePos.z = 4;
 			newSand.transform.position = movePos;
 		} else if (Input.GetMouseButtonDown (0) || Input.GetMouseButton( 0 )) {
 			var mousePos = Input.mousePosition;

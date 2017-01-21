@@ -7,7 +7,7 @@ public class BuildTowerOnClick : MonoBehaviour {
 	public Button towerButton;
 	public MouseRead mouseReader;
 	public GameObject towerObject;
-	void onClick() {
+	public void onClick() {
 		print ("Setting to tower");
 		mouseReader.sandToMake = towerObject;
 	}
