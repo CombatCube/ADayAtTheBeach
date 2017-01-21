@@ -7,12 +7,15 @@ public class HealthTextScript : MonoBehaviour {
 
 	private Canvas mainCanvas;
 	private GameObject healthTextObject;
+	private GameObject owningObject;
 
 	// Use this for initialization
 	void Start () {
+		owningObject = gameObject;
 		//Create a new UI object in the canvas
 		mainCanvas = GameObject.Find ("Canvas").GetComponent<Canvas> ();
 		healthTextObject = new GameObject ();
+		healthTextObject.name = "TowerHealthText";
 		healthTextObject.transform.SetParent (mainCanvas.transform);
 
 		//Add text component
@@ -22,7 +25,7 @@ public class HealthTextScript : MonoBehaviour {
 		healthText.material = ArialFont.material;
 		healthText.alignment = TextAnchor.UpperCenter;
 		healthText.fontSize = 18;
-
+		healthText.raycastTarget = false;
 		//Update text
 		updateHealth();
 
@@ -33,8 +36,11 @@ public class HealthTextScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		healthTextObject.GetComponent<Text>().transform.position = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-
 		updateHealth ();
+	}
+
+	void OnDestroy() {
+		Destroy (healthTextObject);
 	}
 
 	private void updateHealth() {

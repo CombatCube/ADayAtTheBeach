@@ -5,7 +5,6 @@ using UnityEngine;
 public class MoveCastle : MonoBehaviour {
 
 	public GameObject castle;
-	public UnityStandardAssets.CrossPlatformInput.TouchPad touchPad;
 	public TextMesh suh;
 	// Use this for initialization
 	void Start () {
@@ -22,9 +21,9 @@ public class MoveCastle : MonoBehaviour {
 			movePos.z = curPos.z;
 			castle.transform.position = movePos;
 			if (movePos.x - curPos.x > 0) {
-				suh.text = "right";
+				suh.text = "rightsuh";
 			} else if ( movePos.x - curPos.x < 0 ) {
-				suh.text = "left";
+				suh.text = "leftsuh";
 			}
 		} else if (Input.GetMouseButtonDown (0) || Input.GetMouseButton( 0 )) {
 			var mousePos = Input.mousePosition;
@@ -33,9 +32,9 @@ public class MoveCastle : MonoBehaviour {
 			movePos.z = curPos.z;
 			castle.transform.position = movePos;
 			if (movePos.x - curPos.x > 0) {
-				suh.text = "right";
+				suh.text = "rightsuh";
 			} else if ( movePos.x - curPos.x < 0 ) {
-				suh.text = "left";
+				suh.text = "leftsuh";
 			}
 		}
 	}
