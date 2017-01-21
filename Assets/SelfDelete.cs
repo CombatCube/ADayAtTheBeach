@@ -14,9 +14,9 @@ public class SelfDelete : MonoBehaviour {
 		var cameraDist = gameObject.transform.position - Camera.main.transform.position;
 		cameraDist.z = 0;
 		if (cameraDist.magnitude > 10) {
-			print (gameObject.transform.position);
-			print (Camera.main.transform.position);
-			print ("self delete" + gameObject.ToString());
+			//print (gameObject.transform.position);
+			//print (Camera.main.transform.position);
+			//print ("self delete" + gameObject.ToString());
 			DestroyObject (this.gameObject);
 		}
 	}

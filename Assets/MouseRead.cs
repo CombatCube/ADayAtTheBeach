@@ -5,6 +5,7 @@ using UnityEngine;
 public class MouseRead : MonoBehaviour {
 
 	public GameObject cratePink;
+	public GameObject sandToMake;
 	// Use this for initialization
 	void Start () {
 		
@@ -16,13 +17,13 @@ public class MouseRead : MonoBehaviour {
 		if (Input.touchCount > 0 ) {
 			var touchPos = Input.GetTouch (0).position;
 			var movePos = Camera.main.ScreenToWorldPoint (touchPos);
-			var newSand = Instantiate (cratePink);
+			var newSand = Instantiate (sandToMake);
 			movePos.z = 0;
 			newSand.transform.position = movePos;
 		} else if (Input.GetMouseButtonDown (0) || Input.GetMouseButton( 0 )) {
 			var mousePos = Input.mousePosition;
 			var movePos = Camera.main.ScreenToWorldPoint (mousePos);
-			var newSand = Instantiate (cratePink);
+			var newSand = Instantiate (sandToMake);
 			movePos.z = 0;
 			newSand.transform.position = movePos;
 
