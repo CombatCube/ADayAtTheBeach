@@ -25,8 +25,7 @@ public class HealthTextScript : MonoBehaviour {
 		healthText.material = ArialFont.material;
 		healthText.alignment = TextAnchor.UpperCenter;
 		healthText.fontSize = 18;
-
-
+		healthText.raycastTarget = false;
 		//Update text
 		updateHealth();
 

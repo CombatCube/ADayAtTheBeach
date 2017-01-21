@@ -33,6 +33,7 @@ public class MouseRead : MonoBehaviour {
 		} else if (Input.GetMouseButtonDown (0) || Input.GetMouseButton( 0 )) {
 			var mousePos = Input.mousePosition;
 			var movePos = Camera.main.ScreenToWorldPoint (mousePos);
+			//movePos += new Vector3 (-2f, 0.0f, 0.0f);
 			var newSand = Instantiate (sandToMake);
 			movePos.z = 0;
 			newSand.transform.position = movePos;
