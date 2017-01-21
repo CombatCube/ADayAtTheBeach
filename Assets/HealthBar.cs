@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthTextScript : MonoBehaviour {
+public class HealthBar : MonoBehaviour {
+
+	public Health health;
 
 	private Canvas mainCanvas;
 	private GameObject healthTextObject;
@@ -17,7 +19,7 @@ public class HealthTextScript : MonoBehaviour {
 	private static string HEALTH_BAR_BACKGROUND = "redhealth";
 	private static int HEALTH_BAR_WIDTH = 80;
 	private static int HEALTH_BAR_HEIGHT = 30;
-	private static int HEALTH_BAR_BORDER_PX = 2f;
+	private static int HEALTH_BAR_BORDER_PX = 2;
 
 	//How far above the sprite does the health bar float?
 	private static float FLOATING_HEIGHT = 0.5f;
@@ -80,13 +82,12 @@ public class HealthTextScript : MonoBehaviour {
 	}
 
 	private void updateHealth() {
-		Tower t = gameObject.GetComponent<Tower> ();
 		Text healthText = healthTextObject.GetComponent<Text> ();
 
-		healthText.text = t.currentHealth + "/" + t.totalHealth;
+		healthText.text = health.currentHealth + "/" + health.maxHealth;
 
 		Image barForeground = healthBarForeground.GetComponent<Image> ();
-		barForeground.fillAmount = (float)t.currentHealth / t.totalHealth;
+		barForeground.fillAmount = (float)health.currentHealth / health.maxHealth;
 	}
 
 	private void snapUIToSelf(ref GameObject ui, Vector3 worldOffset, Vector3 uiOffset){
