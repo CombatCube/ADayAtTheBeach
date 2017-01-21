@@ -684,7 +684,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tower: {fileID: 100002, guid: dc4cbe373599d4044903273e7b3cf353, type: 2}
-  moat: {fileID: 100000, guid: f7e36b04fd6cad449ac34211df2fd5dc, type: 2}
+  moat: {fileID: 1242178532937472, guid: 93264c84eb204bb4b844a85d78480c7d, type: 2}
+  moatChild: {fileID: 100000, guid: f7e36b04fd6cad449ac34211df2fd5dc, type: 2}
 --- !u!1 &632305963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,7 +1136,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 590733309}
-        m_MethodName: SetNextSandTower
+        m_MethodName: SetNextTower
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
