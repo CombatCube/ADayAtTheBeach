@@ -782,11 +782,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de1628ecb0006f408251c225c672146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tower: {fileID: 1493879823507462, guid: ec6d9a2736b755c429fe8d1ba834ea20, type: 2}
+  moat: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
+  moatChild: {fileID: 100000, guid: f7e36b04fd6cad449ac34211df2fd5dc, type: 2}
   sand: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
   moneyManager: {fileID: 203226543}
-  tower: {fileID: 100002, guid: dc4cbe373599d4044903273e7b3cf353, type: 2}
-  moat: {fileID: 1242178532937472, guid: 93264c84eb204bb4b844a85d78480c7d, type: 2}
-  moatChild: {fileID: 100000, guid: f7e36b04fd6cad449ac34211df2fd5dc, type: 2}
 --- !u!1 &632305963
 GameObject:
   m_ObjectHideFlags: 0

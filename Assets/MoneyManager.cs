@@ -8,7 +8,7 @@ public class MoneyManager : MonoBehaviour {
 	public const int MoatCost = 1;
 	public const int SandCost = 5;
 	public const int TurretCost = 10;
-	public Dictionary<defenseCreator.DefenseType, int> DefenseCosts;
+	public Dictionary<defenseCreator.DefenseType, int> DefenseCosts = new Dictionary<defenseCreator.DefenseType, int>();
 	// Use this for initialization
 	void Start () {
 		DefenseCosts.Add (defenseCreator.DefenseType.Moat, MoatCost);
