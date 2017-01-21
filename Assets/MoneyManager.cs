@@ -5,11 +5,15 @@ using UnityEngine;
 public class MoneyManager : MonoBehaviour {
 	public int Money;
 	public int Reward;
-	public int SandCost = 5;
-	public int TowerCost = 10;
+	public const int MoatCost = 1;
+	public const int SandCost = 5;
+	public const int TurretCost = 10;
+	public Dictionary<defenseCreator.DefenseType, int> DefenseCosts;
 	// Use this for initialization
 	void Start () {
-	
+		DefenseCosts.Add (defenseCreator.DefenseType.Moat, MoatCost);
+		DefenseCosts.Add (defenseCreator.DefenseType.Sand, MoneyManager.SandCost);
+		DefenseCosts.Add (defenseCreator.DefenseType.Turret, MoneyManager.TurretCost);
 	}
 
 	// Update is called once per frame
@@ -17,23 +21,32 @@ public class MoneyManager : MonoBehaviour {
 
 	}
 
-	 public void BuyTower(){
-		if ((Money - TowerCost) >= 0){
-			Money = Money - TowerCost;
-			print("You've bought a tower!");
+	 public bool BuyTurret(){
+		if ((Money - TurretCost) >= 0){
+			Money = Money - TurretCost;
+			return true;
 		}
 		else {
-			print("You don't have enough money!");
+			return false;
 		}
 	}
 
-	public void BuySand(){
+	public bool BuySand(){
 		if ((Money - SandCost) >= 0){
 			Money = Money - SandCost;
-			print("You've bought sand!");
+			return true;
 		}
 		else {
-			print("You don't have enough money!");
+			return false;
+		}
+	}
+
+	public bool BuyMoat() {
+		if (Money - MoatCost >= 0) {
+			Money -= MoatCost;
+			return true;
+		} else {
+			return false;
 		}
 	}
 }
