@@ -9,7 +9,7 @@ public class BuildTowerOnClick : MonoBehaviour {
 	public GameObject towerObject;
 	void onClick() {
 		print ("Setting to tower");
-		mouseReader.sandToMake = Instantiate(towerObject);
+		mouseReader.sandToMake = towerObject;
 	}
 
 	// Use this for initialization

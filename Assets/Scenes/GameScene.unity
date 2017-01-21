@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 145876644}
   - component: {fileID: 145876643}
   - component: {fileID: 145876642}
+  - component: {fileID: 145876645}
   m_Layer: 5
   m_Name: Build Sand Button
   m_TagString: Untagged
@@ -116,7 +117,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 145876640}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 986722454}
@@ -202,6 +203,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 145876640}
+--- !u!114 &145876645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 145876640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfeeafd8a80649d4b8e960a4b4b990e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sandButton: {fileID: 145876642}
+  mouseReader: {fileID: 632305965}
+  sandObject: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
 --- !u!1 &200182686
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,7 +525,7 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 426576553}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_MotionVectors: 1
@@ -551,13 +566,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 426576553}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c51048c81a65f16418c7a2200fdd86c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   castle: {fileID: 426576553}
-  touchPad: {fileID: 0}
   suh: {fileID: 102324384169911088, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
 --- !u!224 &426576557
 RectTransform:
@@ -673,6 +687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cratePink: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
+  sandToMake: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
 --- !u!1 &683297542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,6 +1031,7 @@ GameObject:
   - component: {fileID: 1284428004}
   - component: {fileID: 1284428003}
   - component: {fileID: 1284428002}
+  - component: {fileID: 1284428005}
   m_Layer: 5
   m_Name: Build Tower Button
   m_TagString: Untagged
@@ -1030,7 +1046,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1284428000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 352649633}
@@ -1116,6 +1132,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1284428000}
+--- !u!114 &1284428005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1284428000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ada2f9af373c0742b0cadd3e2be638f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerButton: {fileID: 1284428002}
+  mouseReader: {fileID: 632305965}
+  towerObject: {fileID: 1493879823507462, guid: ec6d9a2736b755c429fe8d1ba834ea20,
+    type: 2}
 --- !u!1001 &1650616417
 Prefab:
   m_ObjectHideFlags: 0
@@ -1179,7 +1210,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4327339498483384, guid: ec6d9a2736b755c429fe8d1ba834ea20, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1.8964844
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4327339498483384, guid: ec6d9a2736b755c429fe8d1ba834ea20, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1200,36 +1231,6 @@ Prefab:
     - target: {fileID: 4327339498483384, guid: ec6d9a2736b755c429fe8d1ba834ea20, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1493879823507462, guid: ec6d9a2736b755c429fe8d1ba834ea20, type: 2}
-      propertyPath: m_Name
-      value: Tower
-      objectReference: {fileID: 0}
-    - target: {fileID: 212227604377552434, guid: ec6d9a2736b755c429fe8d1ba834ea20,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: de4964ec0269e474e84d20637741a519,
-        type: 3}
-    - target: {fileID: 114126852027604526, guid: ec6d9a2736b755c429fe8d1ba834ea20,
-        type: 2}
-      propertyPath: towerType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 212227604377552434, guid: ec6d9a2736b755c429fe8d1ba834ea20,
-        type: 2}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114126852027604526, guid: ec6d9a2736b755c429fe8d1ba834ea20,
-        type: 2}
-      propertyPath: totalHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114126852027604526, guid: ec6d9a2736b755c429fe8d1ba834ea20,
-        type: 2}
-      propertyPath: currentHealth
-      value: 95
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec6d9a2736b755c429fe8d1ba834ea20, type: 2}
