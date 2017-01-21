@@ -31,7 +31,7 @@ public class HealthBar : MonoBehaviour {
 	}
 
 	void OnDestroy() {
-		// delete every single health bar canvas
+		Destroy (healthBar);
 	}
 
 	private void updateHealth() {
