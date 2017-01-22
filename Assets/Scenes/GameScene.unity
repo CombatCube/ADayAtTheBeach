@@ -224,9 +224,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfeeafd8a80649d4b8e960a4b4b990e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sandButton: {fileID: 145876642}
-  mouseReader: {fileID: 632305965}
-  sandObject: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
+  sandButton: {fileID: 0}
+  mouseReader: {fileID: 0}
+  sandObject: {fileID: 0}
 --- !u!1 &200182686
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b21e6f4e2e48467985676030db199d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Money: 500
+  Money: 100
   Reward: 0
 --- !u!23 &203226544
 MeshRenderer:
@@ -736,8 +736,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c51048c81a65f16418c7a2200fdd86c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  castle: {fileID: 426576553}
-  suh: {fileID: 102324384169911088, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
+  castle: {fileID: 0}
+  suh: {fileID: 0}
 --- !u!224 &426576557
 RectTransform:
   m_ObjectHideFlags: 0
@@ -853,7 +853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tower: {fileID: 1493879823507462, guid: ec6d9a2736b755c429fe8d1ba834ea20, type: 2}
   moat: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
-  moatChild: {fileID: 100000, guid: f7e36b04fd6cad449ac34211df2fd5dc, type: 2}
+  moatChild: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
   sand: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
   moneyManager: {fileID: 203226543}
 --- !u!1 &632305963
@@ -896,11 +896,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b512f6c3d1bdb479db4f6a58482bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cratePink: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
-  sandToMake: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
-  sandObject: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
-  towerObject: {fileID: 1493879823507462, guid: ec6d9a2736b755c429fe8d1ba834ea20,
-    type: 2}
+  cratePink: {fileID: 0}
+  sandToMake: {fileID: 0}
+  sandObject: {fileID: 0}
+  towerObject: {fileID: 0}
   createMode: 0
 --- !u!1 &683297542
 GameObject:
@@ -1281,9 +1280,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfeeafd8a80649d4b8e960a4b4b990e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sandButton: {fileID: 1653116351}
-  mouseReader: {fileID: 632305965}
-  sandObject: {fileID: 100000, guid: 18fcd494ab71841d695135246693eb3a, type: 2}
+  sandButton: {fileID: 0}
+  mouseReader: {fileID: 0}
+  sandObject: {fileID: 0}
 --- !u!114 &1653116351
 MonoBehaviour:
   m_ObjectHideFlags: 0
