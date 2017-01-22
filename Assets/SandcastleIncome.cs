@@ -21,12 +21,12 @@ public class SandcastleIncome : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		// create the on click trigger for collecting sand
-		gameObject.AddComponent<EventTrigger> ();
 		clickForIncome = new EventTrigger.Entry ();
 		clickForIncome.eventID = EventTriggerType.PointerDown;
 		clickForIncome.callback.AddListener ((eventData) => {
-			collectIncome();
+			if(incomeReady){
+				collectIncome();
+			}
 		});
 		allEntries.Add (clickForIncome);
 
@@ -34,16 +34,24 @@ public class SandcastleIncome : MonoBehaviour {
 		mouseEnter = new EventTrigger.Entry ();
 		mouseEnter.eventID = EventTriggerType.PointerEnter;
 		mouseEnter.callback.AddListener ((eventData) => {
-			Cursor.SetCursor (sandcastleHover, Vector2.zero, CursorMode.Auto);
+			if (incomeReady) {
+				Cursor.SetCursor (sandcastleHover, Vector2.zero, CursorMode.Auto);
+			}
 		});
 		allEntries.Add (mouseEnter);
 
 		mouseExit = new EventTrigger.Entry ();
 		mouseExit.eventID = EventTriggerType.PointerExit;
 		mouseExit.callback.AddListener ((eventData) => {
-			Cursor.SetCursor (null, Vector2.zero, CursorMode.Auto);
+			if(incomeReady) {
+				Cursor.SetCursor (null, Vector2.zero, CursorMode.Auto);
+			}
 		});
 		allEntries.Add (mouseExit);
+
+
+		// create the on click trigger for collecting sand
+		gameObject.AddComponent<EventTrigger> ().triggers.AddRange(allEntries);
 
 		incomeIsReady ();
 	}
@@ -64,8 +72,6 @@ public class SandcastleIncome : MonoBehaviour {
 	}
 
 	void incomeIsReady() {
-		EventTrigger trigger = GetComponent<EventTrigger> ();
-		trigger.triggers.AddRange (allEntries);
 		incomeReady = true;
 		StartCoroutine (rainbowKeepWhileIncomeReady());
 	}
@@ -73,8 +79,6 @@ public class SandcastleIncome : MonoBehaviour {
 
 	void collectIncome() {
 		moneyManager.GainMoney ((int)sandcastleHealth.currentHealth);
-		EventTrigger trigger = GetComponent<EventTrigger> ();
-		trigger.triggers.Clear ();
 		Cursor.SetCursor (null, Vector2.zero, CursorMode.Auto);
 		incomeReady = false;
 		StartCoroutine (waitForIncome());
