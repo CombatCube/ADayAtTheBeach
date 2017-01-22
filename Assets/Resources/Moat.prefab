@@ -37,12 +37,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4822481216268708}
   - component: {fileID: 212965077288401866}
-  - component: {fileID: 60038342404461820}
   - component: {fileID: 114683652391778746}
   - component: {fileID: 114873826495040228}
   - component: {fileID: 114693156540495096}
   - component: {fileID: 114444272183252598}
   - component: {fileID: 114200457019563542}
+  - component: {fileID: 58511032011950216}
   m_Layer: 0
   m_Name: Moat
   m_TagString: Untagged
@@ -77,8 +77,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &60038342404461820
-PolygonCollider2D:
+--- !u!58 &58511032011950216
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -89,13 +89,8 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 1}
-      - {x: 0.95105654, y: 0.30901697}
-      - {x: 0.5877852, y: -0.80901706}
-      - {x: -0.58778536, y: -0.80901694}
-      - {x: -0.9510565, y: 0.30901712}
+  serializedVersion: 2
+  m_Radius: 1.75
 --- !u!114 &114200457019563542
 MonoBehaviour:
   m_ObjectHideFlags: 1
