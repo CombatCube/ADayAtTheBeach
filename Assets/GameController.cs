@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 	public GameObject wave;
+	private float TimeRemaining;
+	new 
 	// Use this for initialization
 	void Start () {
 		SpawnWave ();
@@ -11,7 +14,12 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		TimeRemaining = 2.0f;
+		TimeRemaining -= Time.deltaTime;
+		while (TimeRemaining > 0) {
+			
+		}
+	
 	}
 
 	public void SpawnWave () {
