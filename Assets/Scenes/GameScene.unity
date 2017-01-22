@@ -444,7 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tower: {fileID: 1493879823507462, guid: ec6d9a2736b755c429fe8d1ba834ea20, type: 2}
-  moat: {fileID: 1483629763038862, guid: 4cde2fe5509f8af40ae6fedba9a57140, type: 2}
+  moat: {fileID: 1461955762907806, guid: 0ed9ede877287b24b9a8686329566cd8, type: 2}
   moatChild: {fileID: 1461955762907806, guid: 0ed9ede877287b24b9a8686329566cd8, type: 2}
   sand: {fileID: 100000, guid: f7e36b04fd6cad449ac34211df2fd5dc, type: 2}
   sandChild: {fileID: 100000, guid: f7e36b04fd6cad449ac34211df2fd5dc, type: 2}
@@ -636,6 +636,7 @@ GameObject:
   - component: {fileID: 634303652}
   - component: {fileID: 634303654}
   - component: {fileID: 634303653}
+  - component: {fileID: 634303655}
   m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
@@ -674,7 +675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -702,6 +703,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 634303651}
+--- !u!114 &634303655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 634303651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cdc659cb0d7f46baa6870f32cd4864e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Manager: {fileID: 203226543}
+  MoatCostText: {fileID: 0}
 --- !u!1 &739372460
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,6 +843,7 @@ GameObject:
   - component: {fileID: 786149090}
   - component: {fileID: 786149091}
   - component: {fileID: 786149092}
+  - component: {fileID: 786149093}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -895,6 +910,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 786149089}
+--- !u!114 &786149093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 786149089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c24990877904b4cad9e82eb7b90cee5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Manager: {fileID: 203226543}
+  SandCostText: {fileID: 0}
 --- !u!1001 &1094042108
 Prefab:
   m_ObjectHideFlags: 0
