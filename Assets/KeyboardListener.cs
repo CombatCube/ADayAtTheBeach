@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KeyboardListener : MonoBehaviour {
 
+    public defenseCreator defense;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,7 +14,18 @@ public class KeyboardListener : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Q))
         {
-            //defenseCreator.
+            defense.SetNextTower();
         }
-	}
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            defense.SetNextMoat();
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            defense.SetNextSand();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
+        }
+    }
 }
