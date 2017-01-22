@@ -1532,7 +1532,7 @@ Prefab:
         type: 2}
       propertyPath: TriggerModule.collisionShape0
       value: 
-      objectReference: {fileID: 308061644}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a81cc3390742ebf418d702bb1ec3e4ed, type: 2}
   m_IsPrefabParent: 0
