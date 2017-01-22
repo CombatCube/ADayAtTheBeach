@@ -6759,6 +6759,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defense: {fileID: 590733309}
   particles: {fileID: 1858751827}
+--- !u!1001 &1094042108
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4149600475339662, guid: a71c7c504039581479d9c680f0343f9d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149600475339662, guid: a71c7c504039581479d9c680f0343f9d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149600475339662, guid: a71c7c504039581479d9c680f0343f9d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149600475339662, guid: a71c7c504039581479d9c680f0343f9d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149600475339662, guid: a71c7c504039581479d9c680f0343f9d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149600475339662, guid: a71c7c504039581479d9c680f0343f9d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149600475339662, guid: a71c7c504039581479d9c680f0343f9d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149600475339662, guid: a71c7c504039581479d9c680f0343f9d, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114705336431435164, guid: a71c7c504039581479d9c680f0343f9d,
+        type: 2}
+      propertyPath: moneyManager
+      value: 
+      objectReference: {fileID: 203226543}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a71c7c504039581479d9c680f0343f9d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &1094042109 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114552387885535786, guid: a71c7c504039581479d9c680f0343f9d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1094042108}
+  m_Script: {fileID: 11500000, guid: 1b8929ddee382744fb3b0a085984d358, type: 3}
 --- !u!1 &1228556901
 GameObject:
   m_ObjectHideFlags: 0
@@ -9629,6 +9682,24 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!1 &1537982543 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1119865041335032, guid: a71c7c504039581479d9c680f0343f9d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1094042108}
+--- !u!114 &1537982544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1537982543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281819e7e920eca4b8c3bd37cfc49040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPerFrame: 0.08
+  health: {fileID: 1094042109}
 --- !u!1 &1645113051
 GameObject:
   m_ObjectHideFlags: 0

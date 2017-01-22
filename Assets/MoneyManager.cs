@@ -62,7 +62,15 @@ public class MoneyManager : MonoBehaviour {
 			ConsoleText.GetComponent<Text> ().text = "You don't have enough money!";
 			return false;
 		}
-	}/*
+	}
+		
+	public void GainMoney( int amount ) {
+		Money += amount;
+		ConsoleText.GetComponent<Text> ().text = "Gained " + amount.ToString() + " grains of sand!";
+		ConsoleText.OnClick ();
+
+	}
+	/*
 	 public void BuyTower(){
 		if ((Money - TowerCost) >= 0){
 			Money = Money - TowerCost;
