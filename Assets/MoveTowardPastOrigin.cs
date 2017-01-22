@@ -13,6 +13,6 @@ public class MoveTowardPastOrigin : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position += directionToOrigin.normalized * translateDist;
+        //transform.position += directionToOrigin.normalized * translateDist;
 	}
 }
