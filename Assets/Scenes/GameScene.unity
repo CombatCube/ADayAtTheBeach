@@ -100,11 +100,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4223942530237580, guid: a81cc3390742ebf418d702bb1ec3e4ed, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.19
+      value: -20.6
       objectReference: {fileID: 0}
     - target: {fileID: 4223942530237580, guid: a81cc3390742ebf418d702bb1ec3e4ed, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.92
+      value: -9.8
       objectReference: {fileID: 0}
     - target: {fileID: 4223942530237580, guid: a81cc3390742ebf418d702bb1ec3e4ed, type: 2}
       propertyPath: m_LocalPosition.z
@@ -135,29 +135,6 @@ Prefab:
       propertyPath: defense
       value: 
       objectReference: {fileID: 590733309}
-    - target: {fileID: 198671701501787602, guid: a81cc3390742ebf418d702bb1ec3e4ed,
-        type: 2}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 198671701501787602, guid: a81cc3390742ebf418d702bb1ec3e4ed,
-        type: 2}
-      propertyPath: randomSeed
-      value: -1928308859
-      objectReference: {fileID: 0}
-    - target: {fileID: 198671701501787602, guid: a81cc3390742ebf418d702bb1ec3e4ed,
-        type: 2}
-      propertyPath: lengthInSec
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1459088363808054, guid: a81cc3390742ebf418d702bb1ec3e4ed, type: 2}
-      propertyPath: m_Name
-      value: Foam
-      objectReference: {fileID: 0}
-    - target: {fileID: 1035257456943114, guid: a81cc3390742ebf418d702bb1ec3e4ed, type: 2}
-      propertyPath: m_Name
-      value: Trail
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a81cc3390742ebf418d702bb1ec3e4ed, type: 2}
   m_IsPrefabParent: 0
