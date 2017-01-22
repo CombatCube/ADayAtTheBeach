@@ -27,12 +27,14 @@ public class MoneyManager : MonoBehaviour {
 		if ((Money - TurretCost) >= 0){
 			Money = Money - TurretCost;
 			ConsoleText.GetComponent<Text> ().text = "You've bought a turret!";
+			ConsoleText.OnClick ();
 			print("You've bought a tower!");
 			return true;
 		}
 		else {
 			print("You don't have enough money!");
 			ConsoleText.GetComponent<Text> ().text = "You don't have enough money!";
+			ConsoleText.OnClick ();
 			return false;
 		}
 	}
@@ -42,11 +44,13 @@ public class MoneyManager : MonoBehaviour {
 			Money = Money - SandCost;
 			print("You've bought sand!");
 			ConsoleText.GetComponent<Text> ().text = "You've bought sand!";
+			ConsoleText.OnClick ();
 			return true;
 		}
 		else {
 			print("You don't have enough money!");
 			ConsoleText.GetComponent<Text> ().text = "You don't have enough money!";
+			ConsoleText.OnClick ();
 			return false;
 		}
 	}
@@ -56,10 +60,12 @@ public class MoneyManager : MonoBehaviour {
 			Money -= MoatCost;
 			print("You've bought a moat!");
 			ConsoleText.GetComponent<Text> ().text = "You've bought a moat!";
+			ConsoleText.OnClick ();
 			return true;
 		} else {
 			print("You don't have enough money!");
 			ConsoleText.GetComponent<Text> ().text = "You don't have enough money!";
+			ConsoleText.OnClick ();
 			return false;
 		}
 	}
