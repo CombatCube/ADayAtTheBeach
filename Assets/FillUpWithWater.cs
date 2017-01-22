@@ -7,16 +7,20 @@ public class FillUpWithWater : MonoBehaviour {
 	private Health health;
 	private SpriteRenderer spriteRenderer;
 
+	private float trueAlpha;
+	private float randomSpeed;
+
 	void Start() {
 		health = gameObject.transform.parent.gameObject.GetComponent<Health> ();
 		spriteRenderer = gameObject.GetComponent<SpriteRenderer> ();
+		randomSpeed = Random.Range (0.1f, 2.0f);
 	}
 
 	void Update () {
-		Color color = spriteRenderer.color;
-		color.a = 0.9f * (health.maxHealth - health.currentHealth) / health.maxHealth;
-		spriteRenderer.color = color;
+		trueAlpha = 0.9f * (health.maxHealth - health.currentHealth) / health.maxHealth;
 
-		Debug.Log ("Setting alpha to: " + color.a);
+		Color color = spriteRenderer.color;
+		color.a = trueAlpha + (0.2f * Mathf.Sin (randomSpeed*Time.time));
+		spriteRenderer.color = color;
 	}
 }
