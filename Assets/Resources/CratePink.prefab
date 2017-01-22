@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 114489443315414222}
   - component: {fileID: 60765738311186772}
   - component: {fileID: 114913741869198440}
+  - component: {fileID: 114480963965410984}
+  - component: {fileID: 114543959323803068}
   m_Layer: 0
   m_Name: CratePink
   m_TagString: Untagged
@@ -166,9 +168,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1359340399835034}
-  m_Text: 'suh
-
-'
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -195,6 +195,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 10
   maxHealth: 40
+--- !u!114 &114480963965410984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1836b9cc36b1f1d469e0d21e029399a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114489443315414222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -209,6 +220,17 @@ MonoBehaviour:
   health: {fileID: 114182376048036894}
   healthBarUIPrefab: {fileID: 1150933744517586, guid: ecd6ece5959f6b243a7ebc080171da39,
     type: 2}
+--- !u!114 &114543959323803068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1836b9cc36b1f1d469e0d21e029399a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114913741869198440
 MonoBehaviour:
   m_ObjectHideFlags: 1
