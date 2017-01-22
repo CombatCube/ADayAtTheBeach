@@ -9,6 +9,10 @@ GameObject:
   m_Component:
   - component: {fileID: 400000}
   - component: {fileID: 21200000}
+  - component: {fileID: 114182376048036894}
+  - component: {fileID: 114489443315414222}
+  - component: {fileID: 60765738311186772}
+  - component: {fileID: 114913741869198440}
   m_Layer: 0
   m_Name: CratePink
   m_TagString: Untagged
@@ -137,6 +141,24 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!60 &60765738311186772
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.625, y: 0.625}
+      - {x: -0.625, y: -0.625}
+      - {x: 0.625, y: -0.625}
+      - {x: 0.625, y: 0.625}
 --- !u!102 &102324384169911088
 TextMesh:
   serializedVersion: 3
@@ -160,3 +182,43 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
+--- !u!114 &114182376048036894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8929ddee382744fb3b0a085984d358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 10
+  maxHealth: 40
+--- !u!114 &114489443315414222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94479aedac8612e46a0d9f596f4e2b41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 114182376048036894}
+  healthBarUIPrefab: {fileID: 1150933744517586, guid: ecd6ece5959f6b243a7ebc080171da39,
+    type: 2}
+--- !u!114 &114913741869198440
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281819e7e920eca4b8c3bd37cfc49040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPerFrame: 0.2
+  health: {fileID: 114182376048036894}
