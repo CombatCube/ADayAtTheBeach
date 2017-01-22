@@ -1429,6 +1429,7 @@ GameObject:
   - component: {fileID: 1352043766}
   - component: {fileID: 1352043765}
   - component: {fileID: 1352043764}
+  - component: {fileID: 1352043767}
   m_Layer: 5
   m_Name: Build Sand Button
   m_TagString: Untagged
@@ -1540,6 +1541,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1352043762}
+--- !u!61 &1352043767
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1352043762}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &1653116348
 GameObject:
   m_ObjectHideFlags: 0
