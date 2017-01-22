@@ -15,7 +15,7 @@ public class MoneyManager : MonoBehaviour {
 	void Start () {
 		DefenseCosts.Add (defenseCreator.DefenseType.Moat, MoatCost);
 		DefenseCosts.Add (defenseCreator.DefenseType.Sand, SandCost);
-		DefenseCosts.Add (defenseCreator.DefenseType.Turret, TurretCost);
+		DefenseCosts.Add (defenseCreator.DefenseType.Tower, TurretCost);
 	}
 
 	// Update is called once per frame
