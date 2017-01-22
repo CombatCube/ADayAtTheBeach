@@ -22,7 +22,7 @@ public class MoneyManager : MonoBehaviour {
 	 public void BuyTower(){
 		if ((Money - TowerCost) >= 0){
 			Money = Money - TowerCost;
-			ConsoleText.GetComponent<Text> ().text = "You've bought a tower!";
+			ConsoleText.GetComponent<Text> ().text += "\nYou've bought a tower!";
 			print("You've bought a tower!");
 
 		}
