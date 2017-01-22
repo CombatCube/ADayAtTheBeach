@@ -128,7 +128,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4223942530237580, guid: a81cc3390742ebf418d702bb1ec3e4ed, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114070562120152096, guid: a81cc3390742ebf418d702bb1ec3e4ed,
         type: 2}
@@ -165,8 +165,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 782920842}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!199 &65627640
 ParticleSystemRenderer:
@@ -2952,9 +2952,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Money: 30000
   Reward: 0
-  MoatCost: 500
-  SandCost: 500
-  TurretCost: 3000
+  MoatCost: 5
+  SandCost: 5
+  TurretCost: 10
   ConsoleText: {fileID: 1228556904}
 --- !u!23 &203226544
 MeshRenderer:
@@ -3005,7 +3005,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &245819134
 GameObject:
@@ -3049,7 +3049,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &246226552
 GameObject:
@@ -3109,11 +3109,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 246226552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.25, y: 0, z: 0}
+  m_LocalPosition: {x: 0.25, y: 0, z: 10}
   m_LocalScale: {x: 2, y: 2, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &352649632
 GameObject:
@@ -3281,7 +3281,7 @@ RectTransform:
   - {fileID: 1793937457}
   - {fileID: 1228556902}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3371,11 +3371,9 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1.8964844}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 683297543}
-  - {fileID: 200182687}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3445,7 +3443,7 @@ GameObject:
   - component: {fileID: 590733308}
   - component: {fileID: 590733309}
   - component: {fileID: 590733310}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: DefenseCreator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3463,7 +3461,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3484,9 +3482,10 @@ MonoBehaviour:
   tower: {fileID: 1493879823507462, guid: ec6d9a2736b755c429fe8d1ba834ea20, type: 2}
   moat: {fileID: 1483629763038862, guid: 4cde2fe5509f8af40ae6fedba9a57140, type: 2}
   moatChild: {fileID: 1461955762907806, guid: 0ed9ede877287b24b9a8686329566cd8, type: 2}
-  sand: {fileID: 100000, guid: f7e36b04fd6cad449ac34211df2fd5dc, type: 2}
+  sand: {fileID: 1398140218665162, guid: edb016b0cac6857419575396b873cdab, type: 2}
   sandChild: {fileID: 100000, guid: f7e36b04fd6cad449ac34211df2fd5dc, type: 2}
   moneyManager: {fileID: 203226543}
+  activeParent: {fileID: 0}
   ConsoleText: {fileID: 1228556904}
 --- !u!61 &590733310
 BoxCollider2D:
@@ -3494,59 +3493,14 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 590733307}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0.2601347, y: -0.121388435}
   serializedVersion: 2
   m_Size: {x: 31.902311, y: 18.445375}
---- !u!1 &632305963
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 632305964}
-  - component: {fileID: 632305965}
-  m_Layer: 0
-  m_Name: SandCreator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &632305964
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 632305963}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8794328, y: -0.15745997, z: -2.3464785}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &632305965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 632305963}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21b512f6c3d1bdb479db4f6a58482bdc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cratePink: {fileID: 0}
-  sandToMake: {fileID: 0}
-  sandObject: {fileID: 0}
-  towerObject: {fileID: 0}
-  createMode: 0
 --- !u!1 &634303651
 GameObject:
   m_ObjectHideFlags: 0
@@ -3707,7 +3661,7 @@ Transform:
   m_LocalScale: {x: 2.4875, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &739372466
 MonoBehaviour:
@@ -3860,10 +3814,9 @@ Transform:
   m_LocalRotation: {x: 0.17216294, y: 0.1285432, z: 0.022665681, w: -0.97638255}
   m_LocalPosition: {x: 2, y: -0.5, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 782920842}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1000866089
 GameObject:
@@ -3925,7 +3878,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1094042108
 Prefab:
@@ -3964,7 +3917,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4149600475339662, guid: a71c7c504039581479d9c680f0343f9d, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114705336431435164, guid: a71c7c504039581479d9c680f0343f9d,
         type: 2}
@@ -4090,7 +4043,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0
-  m_Text: 
+  m_Text: stuff
 --- !u!114 &1228556904
 MonoBehaviour:
   m_ObjectHideFlags: 0

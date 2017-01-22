@@ -39,7 +39,7 @@ public class MoneyManager : MonoBehaviour {
 
 	public bool BuySand(){
 		if ((Money - SandCost) >= 0){
-			Money = Money - SandCost;
+			Money -= SandCost;
 			print("You've bought sand!");
 			ConsoleText.GetComponent<Text> ().text = "You've bought sand!";
 			return true;
