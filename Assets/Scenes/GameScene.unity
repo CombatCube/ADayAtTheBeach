@@ -1290,12 +1290,12 @@ Prefab:
     - target: {fileID: 198671701501787602, guid: a81cc3390742ebf418d702bb1ec3e4ed,
         type: 2}
       propertyPath: CollisionModule.enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198671701501787602, guid: a81cc3390742ebf418d702bb1ec3e4ed,
         type: 2}
       propertyPath: TriggerModule.enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198671701501787602, guid: a81cc3390742ebf418d702bb1ec3e4ed,
         type: 2}
