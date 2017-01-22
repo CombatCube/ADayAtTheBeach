@@ -8,6 +8,7 @@ public class WaveGenerator : MonoBehaviour {
 	public GameObject wave;
 	public float worldHeight = 10;
 	public float worldWidth = 20;
+	public float deltaTimeBetweenWaves = -1f;
     public AudioClip clip;
 
     private float timeSinceLastWave = 5;
@@ -25,7 +26,7 @@ public class WaveGenerator : MonoBehaviour {
 			timeSinceLastWave = 0;
 
 			if (timeBetweenWaves > 5) {
-				timeBetweenWaves -= 1;
+				timeBetweenWaves += deltaTimeBetweenWaves;
 			}
 			GameObject newWave = Instantiate (wave);
 
@@ -34,9 +35,9 @@ public class WaveGenerator : MonoBehaviour {
             float xPosition = Random.Range (-1 * worldWidth, worldWidth);
 
 			if (xPosition > 0) {
-				wave.transform.position = new Vector3 (xPosition - worldWidth/2, worldHeight/2f, -5f) * 1.5f;
+				newWave.transform.position = new Vector3 (xPosition - worldWidth/2, worldHeight/2f, -5f) * 1.5f;
 			} else {
-				wave.transform.position = new Vector3 (xPosition + worldWidth/2, -1f * worldHeight/2f, -5f) * 1.5f;
+				newWave.transform.position = new Vector3 (xPosition + worldWidth/2, -1f * worldHeight/2f, -5f) * 1.5f;
 			}
 		}
 	}
