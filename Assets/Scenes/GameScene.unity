@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b21e6f4e2e48467985676030db199d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Money: 60
+  Money: 3000
   Reward: 0
   MoatCost: 50
   SandCost: 1
