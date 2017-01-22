@@ -22,7 +22,7 @@ public class WaterDamage : MonoBehaviour {
         ParticlePhysicsExtensions.GetCollisionEvents(ps, gameObject, events);
         foreach (ParticleCollisionEvent e in events)
         {
-            GetComponent<Health>().currentHealth -= 0.01f;
+            GetComponent<Health>().currentHealth -= 0.02f;
         }
     }
 }
