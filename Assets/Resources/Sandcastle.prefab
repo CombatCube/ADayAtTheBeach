@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 58938080316485174}
   - component: {fileID: 114705336431435164}
   - component: {fileID: 114792375968650618}
+  - component: {fileID: 114715599616285114}
   m_Layer: 0
   m_Name: Sandcastle
   m_TagString: Untagged
@@ -99,6 +100,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyManager: {fileID: 0}
   sandcastleHealth: {fileID: 114552387885535786}
+  incomeIntervalSeconds: 6
+  sandcastleHover: {fileID: 2800000, guid: f7da348d092b5f244849e84afdcc84dc, type: 3}
+--- !u!114 &114715599616285114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1119865041335032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281819e7e920eca4b8c3bd37cfc49040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPerFrame: 0.02
+  health: {fileID: 114552387885535786}
 --- !u!114 &114792375968650618
 MonoBehaviour:
   m_ObjectHideFlags: 1
