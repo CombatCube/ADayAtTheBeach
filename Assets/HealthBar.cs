@@ -35,12 +35,7 @@ public class HealthBar : MonoBehaviour {
 	}
 
 	private void updateHealth() {
-		Text healthText = healthBar.transform.Find ("Text").gameObject.GetComponent<Text> ();
-
-		healthText.text = (int)health.currentHealth + "/" + (int)health.maxHealth;
-
-		Image barForeground = healthBar.transform.Find("Foreground").gameObject.GetComponent<Image> ();
-		barForeground.fillAmount = health.currentHealth / health.maxHealth;
+		healthBar.GetComponent<HealthView> ().updateHealth(health.currentHealth, health.maxHealth);
 	}
 
 	private void snapUIToSelf(ref GameObject ui, Vector3 worldOffset, Vector3 uiOffset){
