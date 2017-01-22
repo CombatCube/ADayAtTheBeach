@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 114873826495040228}
   - component: {fileID: 114693156540495096}
   - component: {fileID: 114444272183252598}
+  - component: {fileID: 114200457019563542}
   m_Layer: 0
   m_Name: Moat
   m_TagString: Untagged
@@ -95,6 +96,18 @@ PolygonCollider2D:
       - {x: 0.5877852, y: -0.80901706}
       - {x: -0.58778536, y: -0.80901694}
       - {x: -0.9510565, y: 0.30901712}
+--- !u!114 &114200457019563542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1461955762907806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e791e6884bf8bf04e8624e815b92a1be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: f7da348d092b5f244849e84afdcc84dc, type: 3}
 --- !u!114 &114444272183252598
 MonoBehaviour:
   m_ObjectHideFlags: 1
