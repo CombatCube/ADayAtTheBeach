@@ -18,8 +18,10 @@ public class SandcastleIncome : MonoBehaviour {
 	}
 
 	IEnumerator healthToWealth() {
-		yield return new WaitForSeconds (incomeIntervalSeconds);
-		moneyManager.GainMoney ( (int) sandcastleHealth.currentHealth);
+		while (true) {
+			yield return new WaitForSeconds (incomeIntervalSeconds);
+			moneyManager.GainMoney ((int)sandcastleHealth.currentHealth);
+		}
 	}
 }
 
