@@ -9,7 +9,8 @@ public class WaveGenerator : MonoBehaviour {
 	public float worldHeight = 10;
 	public float worldWidth = 20;
 	public float deltaTimeBetweenWaves = -1f;
-    public AudioClip clip;
+    public AudioClip waveClip;
+	public AudioClip backWaveClip;
 
     private float timeSinceLastWave = 5;
 
@@ -30,7 +31,11 @@ public class WaveGenerator : MonoBehaviour {
 			}
 			GameObject newWave = Instantiate (wave);
 
-            newWave.GetComponent<AudioSource>().PlayOneShot(clip);
+			AudioSource[] sources = newWave.GetComponents<AudioSource> ();
+
+			sources [0].PlayOneShot (waveClip);
+			sources[1].Play(44100 * 5);
+
             //Super hacky don't do this at home kids
             float xPosition = Random.Range (-1 * worldWidth, worldWidth);
 
