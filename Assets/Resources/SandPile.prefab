@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114453134176078676}
   - component: {fileID: 114864561152253876}
   - component: {fileID: 114859511666937246}
+  - component: {fileID: 114829744154326808}
   m_Layer: 0
   m_Name: SandPile
   m_TagString: Untagged
@@ -86,6 +87,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPerFrame: 0.5
   health: {fileID: 114114528004894326}
+--- !u!114 &114829744154326808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1183027000977948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 495ebc5a4ec31c24c990e94a541dca25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 114114528004894326}
+  spriteRenderer: {fileID: 212322946308780034}
 --- !u!114 &114857021549755220
 MonoBehaviour:
   m_ObjectHideFlags: 1
