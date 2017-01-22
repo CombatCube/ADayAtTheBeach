@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 60038342404461820}
   - component: {fileID: 114683652391778746}
   - component: {fileID: 114290276974555280}
+  - component: {fileID: 114873826495040228}
   m_Layer: 0
   m_Name: Moat
   m_TagString: Untagged
@@ -73,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281819e7e920eca4b8c3bd37cfc49040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPerFrame: 0
+  healthPerFrame: 0.5
   health: {fileID: 114683652391778746}
 --- !u!114 &114683652391778746
 MonoBehaviour:
@@ -86,8 +87,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b8929ddee382744fb3b0a085984d358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 20
+  currentHealth: 1
   maxHealth: 50
+--- !u!114 &114873826495040228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1461955762907806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94479aedac8612e46a0d9f596f4e2b41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 114683652391778746}
+  healthBarUIPrefab: {fileID: 1696092735493870, guid: 06a45f504fa10af40a5e5fd68081ed25,
+    type: 2}
 --- !u!212 &212965077288401866
 SpriteRenderer:
   m_ObjectHideFlags: 1
