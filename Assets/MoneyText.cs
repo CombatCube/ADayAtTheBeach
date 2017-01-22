@@ -14,6 +14,6 @@ public class MoneyText : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		MoneyDisp.text = "Money: " + Manager.Money;
+		MoneyDisp.text = "Sand: " + Manager.Money + " grains";
 	}
 }

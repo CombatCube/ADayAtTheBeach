@@ -6,16 +6,21 @@ using UnityEngine.UI;
 public class MoneyManager : MonoBehaviour {
 	public int Money;
 	public int Reward;
-	public int MoatCost;
-	public int SandCost;
-	public int TurretCost;
+<<<<<<< HEAD
+	public const int MoatCost = 1;
+	public const int SandCost = 2;
+	public const int TurretCost = 10;
 	public Dictionary<defenseCreator.DefenseType, int> DefenseCosts = new Dictionary<defenseCreator.DefenseType, int>();
+=======
+	public int SandCost;
+	public int TowerCost;
 	public ConsoleScript ConsoleText;
+>>>>>>> towersgaelan
 	// Use this for initialization
 	void Start () {
 		DefenseCosts.Add (defenseCreator.DefenseType.Moat, MoatCost);
-		DefenseCosts.Add (defenseCreator.DefenseType.Sand, SandCost);
-		DefenseCosts.Add (defenseCreator.DefenseType.Turret, TurretCost);
+		DefenseCosts.Add (defenseCreator.DefenseType.Sand, MoneyManager.SandCost);
+		DefenseCosts.Add (defenseCreator.DefenseType.Turret, MoneyManager.TurretCost);
 	}
 
 	// Update is called once per frame
@@ -23,46 +28,15 @@ public class MoneyManager : MonoBehaviour {
 
 	}
 
+<<<<<<< HEAD
 	 public bool BuyTurret(){
 		if ((Money - TurretCost) >= 0){
 			Money = Money - TurretCost;
-			ConsoleText.GetComponent<Text> ().text = "You've bought a turret!";
-			print("You've bought a tower!");
 			return true;
 		}
 		else {
-			print("You don't have enough money!");
-			ConsoleText.GetComponent<Text> ().text = "You don't have enough money!";
 			return false;
-		}
-	}
-
-	public bool BuySand(){
-		if ((Money - SandCost) >= 0){
-			Money = Money - SandCost;
-			print("You've bought sand!");
-			ConsoleText.GetComponent<Text> ().text = "You've bought sand!";
-			return true;
-		}
-		else {
-			print("You don't have enough money!");
-			ConsoleText.GetComponent<Text> ().text = "You don't have enough money!";
-			return false;
-		}
-	}
-
-	public bool BuyMoat() {
-		if (Money - MoatCost >= 0) {
-			Money -= MoatCost;
-			print("You've bought a moat!");
-			ConsoleText.GetComponent<Text> ().text = "You've bought a moat!";
-			return true;
-		} else {
-			print("You don't have enough money!");
-			ConsoleText.GetComponent<Text> ().text = "You don't have enough money!";
-			return false;
-		}
-	}/*
+=======
 	 public void BuyTower(){
 		if ((Money - TowerCost) >= 0){
 			Money = Money - TowerCost;
@@ -74,18 +48,35 @@ public class MoneyManager : MonoBehaviour {
 			
 			print("You don't have enough money!");
 			ConsoleText.GetComponent<Text> ().text = "You don't have enough money!";
+>>>>>>> towersgaelan
 		}
 	}
 
-	public void BuySand(){
+	public bool BuySand(){
 		if ((Money - SandCost) >= 0){
 			Money = Money - SandCost;
+<<<<<<< HEAD
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+	public bool BuyMoat() {
+		if (Money - MoatCost >= 0) {
+			Money -= MoatCost;
+			return true;
+		} else {
+			return false;
+=======
 			print("You've bought sand!");
 			ConsoleText.GetComponent<Text> ().text = "You've bought sand!";
 		}
 		else {
 			print("You don't have enough money!");
 			ConsoleText.GetComponent<Text> ().text = "You don't have enough money!";
+>>>>>>> towersgaelan
 		}
-	}*/ 
+	}
 }
