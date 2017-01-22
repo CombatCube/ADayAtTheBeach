@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4327339498483384}
   - component: {fileID: 212227604377552434}
   - component: {fileID: 114573923792806708}
-  - component: {fileID: 114851055300745836}
   - component: {fileID: 114532710777448658}
   - component: {fileID: 114435033651169934}
   - component: {fileID: 60138927583539458}
@@ -192,17 +191,6 @@ MonoBehaviour:
   health: {fileID: 114532710777448658}
   healthBarUIPrefab: {fileID: 1150933744517586, guid: ecd6ece5959f6b243a7ebc080171da39,
     type: 2}
---- !u!114 &114851055300745836
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1493879823507462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11a7aa43a4f1c7448a4bec2775c612c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212227604377552434
 SpriteRenderer:
   m_ObjectHideFlags: 1
